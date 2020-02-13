@@ -4,28 +4,122 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 h3 {
   float: left;
   font-family: 'Lemonada', cursive;
   color: white;
-  padding-left: 10px;
+  padding-left: 20px;
 }
-a{
-float: right;
 
-}
 
 li a {
+  float: right;
   display: block;
   color: white;
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 li a:hover {
   background-color: #111;
+}
+
+.nav-pic{
+  display: grid;
+  grid-template-columns: auto auto; 
+}
+#about{
+    display: grid;
+    grid-template-columns: auto auto;
+     background-color:black;
+     color:white;
+     padding:20px;
+     font-family: 'Titillium Web', sans-serif;
+}
+h2{
+    font-style:bold;
+}
+#about img{    
+    height: 200px;
+    weight: 200px;
+}
+.rectangle {
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  background-color:#faacf1;
+}
+ .fa-linkedin{
+     height:50px;
+     width: 50px;
+
+   }    
+.fa-instagram {
+  height:50px;
+  width: 50px;
+}
+.fa-linkedin {
+  height:50px;
+  width: 50px;
+}
+.fa-facebook {
+    height:50px;
+  width: 50px;
+}
+.fa-eventbrite{
+    height:50px;
+  width: 50px;
+} 
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #faacf1;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Titillium Web', sans-serif;
 }
